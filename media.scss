@@ -50,7 +50,23 @@
     }
   }
 
- 
+  .footer {
+    .contact-info {
+      grid-column: 2 / 7;
+    }
+
+    .location {
+      grid-column: 7 / 12;
+    }
+
+    .quick-links {
+      grid-column: 2 / 7;
+    }
+
+    .follow-us {
+      grid-column: 7 / 12;
+    }
+  }
 }
 
 
