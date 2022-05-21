@@ -2,31 +2,101 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fast food</title>
 
+    <link rel="stylesheet" href="./sass/style.css" />
+
+    <link rel="stylesheet" href="./sass/media.css" />
   </head>
+  <body>
 
-<body>
-<h1>Unos podataka</h1>
 
-	<form> 
-          <label for="id">Id</label>
-          <input type="number" name="inp_id" id="inp_id">
-	  <br>
-	  <br>
-          <label for="name">Name</label>
-          <input type="text" name="inp_name" id="inp_name">
-	  <br>
-	  <br>
-          <label for="price">Price</label>
-          <input type="number" name="inp_price" id="inp_price">
-	  <br>
-	  <br>
-          <label for="imageUrl">Image Url</label>
-          <input type="text" name="inp_url" id="inp_url">
-	  <hr>
-          <button type="submit">Submit</button>
-         </form>
-</body>
+    <header class="header">
+
+
+      <nav class="navbar">
+        <ul>
          
+         
+          <li>
+            <a href="#menu">Metode</a>
+          </li>
+          <li>
+            <a href="#popular">Hrana</a>
+          </li>
+         
+        </ul>
+      </nav>
+
+      <div id="menu-bar" class="fas fa-bars"></div>
+    </header>
+
+
+    <main>
+
+      <section id="menu" class="menu">
+        
+        <div class="catagory">
+         
+          <input class="dodaj-button" type="button" class="active" value="Dodavanje" />
+          <input class="izmjena-button" type="button" value="Izmjena" />
+          <input class="brisi-button" type="button" value="Brisanje" />
+        </div>
+
+       
+      </section>
+      <div class="method_container">
+          <div class="dodaj">
+            <h2>Dodaj hranu</h2>
+            <form> 
+              <label for="food-id"><h1>Id</h1></label>
+              <input type="number" name="inp_id" class="food-id">
+              <label for="food-name"><h1>Name</h1></label>
+              <input type="text" name="inp_name" class="food-name">
+              <label for="food-price"><h1>Price</h1></label>
+              <input type="number" name="inp_price" class="food-price">
+              <label for="food-imageUrl"><h1>Image Url</h1></label>
+              <input type="text" name="inp_url" class="food-imageUrl">
+              <button type="button" class="sumbit-button">Submit</button>
+               </form>
+           </div>
+           <div class="update">
+            <h2>Izmijeni hranu</h2>
+            <form> 
+              <label for="food-id"><h1>Id</h1></label>
+              <input type="number" name="inp_id" class="food-id">
+              <label for="food-name"><h1>Name</h1></label>
+              <input type="text" name="inp_name" class="food-name">
+              <label for="food-price"><h1>Price</h1></label>
+              <input type="number" name="inp_price" class="food-price">
+              <label for="food-imageUrl"><h1>Image Url</h1></label>
+              <input type="text" name="inp_url" class="food-imageUrl">
+              <button type="button" class="update-button">Submit</button>
+               </form>
+           </div>
+           <div class="izbrisi">
+            <h2>Izbrisi hranu</h2>
+            <form> 
+              <label for="food-id"><h1>Id</h1></label>
+              <input type="number" name="inp_id" class="food-id">
+              <button type="button" class="delete-button">Submit</button>
+               </form>
+           </div>
+      </div>
+
+
+      <section id="popular" class="popular">
+        <h2>Pregled artikala</h2>
+
+        <div class="popular-content">
+          
+        </div>
+      </section>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+
+
